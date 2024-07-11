@@ -1,0 +1,125 @@
+/* @import "react-split-pane/style.css"; */
+
+
+/* Add styles for folder actions icons */
+.folder-summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative; /* Needed for positioning the actions */
+}
+
+.folder-actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.folder-summary:hover .folder-actions {
+    display: flex;
+}
+
+/* Adjust spacing and styling for action icons */
+.action-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Existing CSS */
+.file-tree {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 8px;
+}
+
+.file-item, .folder-item {
+    display: block;
+    margin-bottom: 8px;
+    /* padding-left: 20px; */
+}
+
+.icon, .icon-open {
+    width: 18px;
+    /* height: 18px; */
+    margin-right: 5px;
+}
+
+.file-icon {
+    /* width: 20px; */
+    height: 21px;
+    margin-right: 5px;
+}
+
+.icon-open {
+    display: none;
+}
+
+details[open] .icon {
+    display: none;
+}
+
+details[open] .icon-open {
+    display: inline;
+}
+
+.sub {
+    padding-left: 20px;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+/* Remove the default arrow for the details tag */
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.folder {
+    color: var(--color-4);
+    font-size: 15px;
+}
+
+::-webkit-scrollbar{
+    /* display: none; */
+    /* make it ultra thin */
+    width: 0px;
+}
+
+summary:not(:first-child) {
+    margin-top: 18px;
+}
+
+.file-tree img {
+    width: 20px;
+    /* height: 20px; */
+}
+
+.folder > .file-tree > li > details > .folder-summary {
+    /* border: 2px solid var(--color-4); */
+    text-transform: uppercase;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0;
+    top: 0;
+    position: sticky;
+    background-color: var(--color-1);
+}
+
+.folder > .file-tree > li > details > .folder-summary > img {
+    display: none;
+}
+
+.folder > .file-tree > li > details > .folder-summary > .sub {
+    padding-left: 0 !important;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+}

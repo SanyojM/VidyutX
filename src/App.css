@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root{
+  --color-1: #171924;
+  --color-2: #23273b;
+  --color-3: #323750;
+  --color-4: #8e96bd;
+}
+
+body{
+  background-color: var(--color-1);
+}
+
+a{
+  color: var(--color-4);
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.left{
+  width: 22%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right{
+  width: 8%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menubar{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  align-items: center;
+}
+
+.right svg{
+  margin: 5px 0;
+  width: 18px;
+  height: 18px;
+}
