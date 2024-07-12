@@ -24,12 +24,14 @@ a{
 
 .left{
   width: 22%;
+  min-width: 400px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .right{
   width: 8%;
+  min-width: 150px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -45,4 +47,76 @@ a{
   margin: 5px 0;
   width: 18px;
   height: 18px;
+}
+
+.monaco-editor .margin {
+  background-color: var(--color-1)!important;
+}
+
+.monaco-editor .margin .line-numbers {
+  color: var(--color-4);
+}
+
+.monaco-editor , .monaco-editor-background {
+  background-color: #171924 !important;
+}
+
+.minimap {
+  background-color: #1719243f !important;
+  z-index: -100;
+}
+
+.monaco-editor *{
+  font-family: fira code;
+  border: none;
+}
+
+.filetabnav{
+  display: flex;
+  justify-content: start;
+  overflow-x: scroll;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.terminal{
+  height: 35%;
+  width: calc(100% - 300px);
+  background-color: var(--color-2);
+  position: absolute;
+  bottom: 2%;
+}
+
+.loader {
+  display: block;
+  width: 84px;
+  height: 84px;
+  position: relative;
+}
+
+.loader:before , .loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #FFF;
+  transform: translate(-50% , -100%)  scale(0);
+  animation: push_401 1.5s infinite linear;
+}
+
+.loader:after {
+  animation-delay: 0s;
+}
+
+@keyframes push_401 {
+  0% , 50% {
+    transform: translate(-50% , 0%)  scale(1)
+  }
+
+  100% {
+    transform: translate(-50%, -100%) scale(0)
+  }
 }

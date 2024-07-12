@@ -86,7 +86,7 @@ details > summary::-webkit-details-marker {
     width: 0px;
 }
 
-summary:not(:first-child) {
+summary {
     margin-top: 18px;
 }
 
