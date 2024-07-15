@@ -72,7 +72,7 @@ export default function Monaco({code, language}) {
 
   return (
     <>
-        <Editor height="60%"  defaultLanguage={language} loading={<Loader/>} defaultValue={code} options={FontFace="fira code"} theme='vs-dark'   />
+        <Editor height="100%"  defaultLanguage={language} loading={<Loader/>} defaultValue={code} options={FontFace="fira code"} theme='vs-dark'   />
     </>
   )
 }

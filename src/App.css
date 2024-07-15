@@ -34,6 +34,7 @@ a{
   min-width: 150px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .menubar{
@@ -81,7 +82,6 @@ a{
 
 .terminal{
   height: 35%;
-  width: calc(100% - 300px);
   background-color: var(--color-2);
   position: absolute;
   bottom: 2%;
